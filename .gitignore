@@ -1,14 +1,15 @@
-# 忽略模型權重檔案
+# 排除虛擬環境 (這是關鍵！)
+sexism/
+venv/
+Lib/
+Include/
+Scripts/
+
+# 排除模型權重
 bert_sexism_model/
 *.bin
 *.pth
-*.safetensors
 *.zip
 
-# 忽略大型數據集
+# 排除數據集
 *.csv
-
-# 忽略 Python 環境與快取
-venv/
-__pycache__/
-.ipynb_checkpoints/
